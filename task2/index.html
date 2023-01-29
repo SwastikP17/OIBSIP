@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chartset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PERSONAL PORTFOLIO WEBSITE</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://kit.fontawesome.com/1fbd759a6b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+       <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/profile.png" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header" style="color: white;">Home</a></li>
+                    <li><a href="#about"  style="color: white;">About</a></li>
+                    <li><a href="#services" style="color: white;">Services</a></li>
+                    <li><a href="#portfolio"  style="color: white;">Portfolio</a></li>
+                    <li><a href="#contact"  style="color: white;">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p style="color: red;">Programmer</p>
+                <!--<marquee direction="right">--><h1 style="color: red;">Hi, my name<br> is <span>Swastik Pandey</span></h1>
+            </div>
+        </div>
+       </div>
+       <!--about-->
+       <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Swastik Pandey and I am a Programmer.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div> 
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C++ developer</span><br>Using Data Structure and algorithm in c++.</li>
+                            <li><span>Web development</span><br>Making website using Mern stack</li>
+                            <li><span>UI/UX designer</span><br>Building the User interface of any platform using Figma</li>
+                            
+                        </ul> 
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Developer</span><br>Worked as a web developer</li>
+                            <li><span>C++</span><br>C++ developer</li>
+                            <li><span>UI/UX</span><br>Making UI of different website</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>B.Tech in Information technology</li>
+                            <li><span>2019-2020</span><br>12th</li>
+                            <li><span>2017-2018</span><br>10th</li>
+                            
+                        </ul>
+                    </div>
+                </div>       
+            </div>
+        </div>
+       </div>
+       <!--services-->
+       <div id="services">
+        <div class="container">
+           <h1 class="sub-title">My services</h1>
+           <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designing</h2>
+                    <p>Making different Website</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>C++ Programming</h2>
+                    <p>Learn Data Structure in C++</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI/UX designer</h2>
+                    <p>Make the design of the home page of different website using figma</p>
+                    <a href="#">Learn more</a>
+                </div>
+           </div> 
+        </div>
+       </div>
+       <!--portfolio-->
+       <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/c++ (1).jpg" alt="work">
+                    <div class="layer">
+                       <h3>Simple Algorithm of Path finder</h3> 
+                       <p>This alogorithm is used to find the best route in the path.</p>
+                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/web.jpg" alt="work">
+                    <div class="layer">
+                        <h3>Social Media App</h3> 
+                        <p>This app is type of Social app through which user can interact with each other.</p>
+                          <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                     </div>
+                </div>
+                <div class="work">
+                    <img src="images/uiux.jpg" alt="work">
+                    <div class="layer">
+                        <h3>Platform design</h3> 
+                        <p>Able to see the different design of the platform.</p>
+                          <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                     </div>
+                </div>
+            </div>
+            <a href="#"class=btn>See more</a>
+        </div>
+       </div>
+       <!--contact-->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>Contact@example.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+25471234567</p>
+                    <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:sephkim100@gmail.com"><i class="fa-solid fa-inbox"></i></a>
+                    </div>
+                    <a href="images/Swastik's Resume (1).pdf" download class="btn btn2">Download CV</a>
+                <div class="contact-right">
+                    <form method="post" action="portfolio.php">
+                        <input type="text" name="firstName" placeholder="first name" required>
+                        <input type="text" name="lastName" placeholder="last name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div> 
+        </div>
+        <div class="copyright">
+            <p style="color: red;">Copyright @ Swastik. made with<i class="fas fa-heart"></i> for easy understanding</p>
+        </div>
+       </div>
+       <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+                
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+                
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+       </script>
+       <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="0";
+        }
+       </script>
+          
+    </body>
+</html>
